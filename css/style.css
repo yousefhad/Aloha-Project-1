@@ -1,0 +1,967 @@
+
+/*------------*/
+
+.screen-reader-text {
+   clip: rect(1px, 1px, 1px, 1px);
+   position: absolute !important;
+   height: 1px;
+   width: 1px;
+   overflow: hidden;
+}
+
+
+.screen-reader-text:focus {
+   clip: auto !important;
+   display: block;
+   height: auto;
+   left: 5px;
+   top: 5px;
+   width: auto;
+   z-index: 1000; }/* above all content */
+
+
+#test[tabindex="-1"]:focus {
+   outline: 0;
+}
+
+
+
+* {
+   box-sizing: border-box;
+   outline: none;
+}
+
+
+strong , b  {
+  font-weight: bold ;
+}
+
+
+img{
+  border: 0;
+  height: auto;
+   max-width: 100%;
+}
+
+
+/* Fonts */
+@font-face {
+    font-family: 'playfair_displaybold';
+    src: url('playfairdisplay-bold-webfont.woff2') format('woff2'),
+         url('playfairdisplay-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'playfair_displaybold_italic';
+    src: url('playfairdisplay-bolditalic-webfont.woff2') format('woff2'),
+         url('playfairdisplay-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'playfair_displayitalic';
+    src: url('playfairdisplay-italic-webfont.woff2') format('woff2'),
+         url('playfairdisplay-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'playfair_displayregular';
+    src: url('playfairdisplay-regular-webfont.woff2') format('woff2'),
+         url('playfairdisplay-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'playfair_display_scbold';
+    src: url('playfairdisplaysc-bold-webfont.woff2') format('woff2'),
+         url('playfairdisplaysc-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'playfair_display_scBdIt';
+    src: url('playfairdisplaysc-bolditalic-webfont.woff2') format('woff2'),
+         url('playfairdisplaysc-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'playfair_display_scregular';
+    src: url('playfairdisplaysc-regular-webfont.woff2') format('woff2'),
+         url('playfairdisplaysc-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/*------ ----Global------ ---- */
+
+
+.add-to-cart{background-color: black;
+color: white;
+border-radius: 3rem;
+border: none;
+}
+
+button:hover{background-color: orange;}
+
+html {
+   font-size: 14px;
+ }
+section{
+  display: block;
+}
+
+ul{
+  list-style:non;
+}
+body,
+button,
+input,
+select,
+textarea
+{
+  color: #2d2d2d;
+  font-family: 'Raleway web';
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 2;
+}
+
+h1, h2 ,h3 {
+   font-family: 'Playfair display web';
+   line-height: 1;
+   font-size: 1rem;
+}
+
+h2 {
+   font-size: 2.4rem;
+   margin-bottom: 1.5rem;
+   text-align: center;
+}
+
+h3 {
+   color: #e2574c;
+   font-size: 1.5rem;
+   margin-bottom: 1rem;
+   text-align: center;
+}
+
+
+a {
+   color: #e2574c;
+}
+
+a:hover
+{
+   color: #b64036;
+}
+p{text-align: center;}
+/* --------- */
+
+.strong {
+   font-style: normal;
+   font-weight: bold;
+}
+/*----------------------*/
+/*---- web html ----*/
+
+/*header*/
+
+.m-nav ul{
+  text-align: center;
+  padding-top: 0;
+  border-top: 0;
+  max-height: 100%;
+}
+
+
+.m-nav li{
+  width: 20%;
+  display: inline-block;
+text-transform: uppercase;
+font-weight: bold;
+padding-top: 1rem;
+font-size: 0.9rem;
+}
+
+.m-nav{ 
+  align-self: center;
+  order: 3 ;
+  width: 100%;
+}
+
+.m-nav li a{
+  text-decoration: none;
+}
+
+.header_logos{
+  display: flex;
+flex-flow: row;
+justify-content: space-around;
+ }
+
+
+.logo {
+       align-self: flex-start;
+       order: 1;
+       height: 5rem;
+       width: 5rem;
+}
+
+
+.cart{
+align-self: flex-end;
+   order :2;
+  width: 3rem;
+height: 3rem;
+display: flex;
+  flex-flow: row;
+  max-width: 20%;
+}
+
+
+.logo img {
+order: 1;
+  width: 100%;
+  height: 100%;
+}
+
+
+.contain1head{
+  background-color: white;
+  position: fixed;
+      z-index: 100;
+      width: 100%;
+      padding-bottom: 1px;
+      top: 0;
+      align-items: center;
+
+}
+
+.inner-header{
+      display: flex;
+  flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: .5rem;
+    padding-top: 1rem;
+}
+
+
+.container {
+    padding: 0 2%;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+/*banner*/
+
+.collection{
+  font-size: 2rem;
+}
+ .sprin {
+      font-size: 3rem;
+   }
+
+
+.sect-banner{
+  background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ), url('../images/banner-girl.png') no-repeat center 50px, url('../images/flower-bkgd.jpg') repeat-x center top;
+    background-size: cover, 200px 500px, cover;
+   height: 70vw;
+   position: relative;
+   color: white;
+position: center;
+margin-top: 100px;
+
+ }
+
+
+.collection{
+  font-size: 20px;
+}
+
+
+.banner-text
+{
+  top: 25%;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  font-weight:500;
+}
+.collection
+{
+  margin-bottom: 0px;
+text-transform: uppercase;
+
+}
+.season{
+  font-size: 50px;
+      font-family: 'Playfair Display ';
+
+}
+.strong
+{
+
+  font-size: 28px;
+}
+/*about*/
+.detail-text
+{
+  padding-top: 10px;
+  height: 150px;
+  text-align: center;
+  margin: auto;
+}
+
+.detail
+{
+  width: 100%;
+}
+
+
+/*products one*/
+
+.prod1{height: 1000px;
+
+}
+
+
+.prod1-catego{display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+     justify-content: space-around; height: 100%;}
+
+    
+.c-name a {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-self: center;
+    color: white;
+    padding-top: 18vw;
+    position: absolute; 
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  
+}
+.c-name a:hover{color: #f5ebc6;}
+.c-large-mens {
+    background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ), url('../images/mens-category.jpg') no-repeat center center;
+    background-size: cover, cover;width: 620px;flex-basis: 100vw;border: 4px solid #fff;
+}
+.c-small-trends {
+    background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ), url('../images/trends-category.jpg') no-repeat center center;
+    background-size: cover, cover;width: 300px;flex-basis: 50vw;border: 4px solid #fff;
+}
+.c-small-glasses {
+    background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ), url('../images/glasses-category.jpg') no-repeat center center;
+    background-size: cover, cover;width: 310px;flex-basis: 50vw;border: 4px solid #fff;
+}
+.c-small-sale {
+    background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ), url('../images/sale-category.jpg') no-repeat center center;
+    background-size: cover, cover;width: 310px;flex-basis: 50vw;border: 4px solid #fff;
+}
+
+.c-small-bags{
+    background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ), url('../images/bags-category.jpg') no-repeat center center;
+    background-size: cover, cover;width: 310px;flex-basis: 50vw;border: 4px solid #fff;
+}
+.c-large-womens {
+    background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ), url('../images/womens-category.jpg') no-repeat center center;
+    background-size: cover, cover;width: 620px;flex-basis: 100vw;border: 4px solid #fff;
+}
+
+/* products2 mov*/
+
+
+.p-wrapper{width: 100%;
+  padding: 3rem 2rem;
+	align-content: center;
+
+}
+
+.filckity{height: 100px;}
+
+ .flickit .dot{
+ display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 8px;
+    background: #333;
+    border-radius: 50%;
+    opacity: .25;
+    cursor: pointer;
+
+ }
+ .flickit{
+      position: absolute;
+    width: 100%;
+    bottom: -25px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    line-height: 1;
+ }
+
+
+.p-type{ text-transform: uppercase;}
+
+.the-price{color: #969696;
+   font-weight: bold;}
+
+.featured{
+  height: 700px;
+}
+.contin-mov{
+  padding-top: 50px;
+}
+
+/*signup /in*/
+
+.sign {align-items: center;
+  padding-top: 0%;
+    line-height:1;
+
+    height: 250px;
+}
+
+.contain p{text-align: center;
+}
+.contain h2{ text-align: center;}
+
+
+.signing{ position: relative;
+ height: 350px;
+     background:url('../images/wave-bkgd.jpg') no-repeat center bottom;
+    color: white;
+    margin-bottom: 5px;
+}
+.signup {    
+             display: block;
+           position: relative;
+
+}
+.sign{height: 100%;
+  line-height: 3rem;
+ text-align: center;
+ margin: 0px;
+}
+.sign h2{
+  padding-top:50px;
+}
+.sign p {width: 800px;
+  font-size: 1.5rem;}
+
+   input[type="email"] {
+         width: 15rem;
+  }
+}
+   input[type="submit"] { 
+    cursor: pointer;
+    font-weight: bold;
+    right: .25rem;
+    top: .25rem;
+}
+   input[type="submit"]:hover {
+     background-color: #b64036;
+
+}
+   input[type="submit"] {width: 5rem;
+      color: white;
+      background-color: #e2574c;
+      
+}
+  input[type="email"], input[type="submit"] {
+    border: 0;
+    border-radius: 25px;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+  
+}
+
+
+
+/*footer*/
+
+.contain1{
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+
+}
+.siz{
+  align-items: center;
+  margin:0%;
+  width:100%;
+}
+.copyright{
+  padding-top: 30px;
+}
+  .footer{
+  background-color: #242424;
+  height: 250px;
+
+  padding: 0 50px ;
+  font-family: 'Playfair Display Web' ;
+}
+.footer p{
+  color: white;
+
+}
+.contact{
+  line-height: 2;
+}
+
+.the-address p {
+  color: #999999;
+}
+
+.info{
+  width: 200px;
+  
+}
+.social-media{
+
+  padding-top: 0px;
+   width: 100px;
+  height: 100px;
+}
+
+
+.social-links li{
+  padding-bottom: 10px;
+  padding-right: 35px;
+
+}
+
+.social-links ul{
+  padding-top: 30px;
+  list-style: none;}
+
+  .footer a{
+  color:white;
+  line-height: 1.7;
+  font-size: 18;}
+  .footer a:hover{color: #b64036;}
+
+
+/*----------lap-end-------*/
+@media only screen and (min-width: 600px){
+
+  font-size: 16px;
+
+  
+ /* Sections */
+
+   
+
+
+   /* Header */
+
+   .logo img {
+      max-width: 160px;
+   }
+
+   .cart {
+      width: 62px;
+   }
+
+
+   .main-nav li {
+      font-size: 1rem;
+      margin: 1rem;
+   }
+
+   /* Banner */
+
+.sect-banner{
+  height: 550px;
+}
+   .banner {
+      background-size: cover, 400px 615px, contain;
+      position: relative;
+   }
+
+   .sprin {
+      font-size: 4rem;
+   }
+
+   /* detail */
+
+   .detail-text {
+    height: 250px;
+    text-align: center;
+    width: 700px;
+   }
+   .detail-text p{
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+ .detail-text h2{
+  text-align: center;
+  font-style: italic;
+  margin-top: 20px;
+
+ }
+   /* Categories */
+
+   .c-name {
+    font-size: 2.4rem;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items:center;
+       }
+
+   /* Most Loved  */
+
+   .p-wrapper {
+      margin-bottom: 0;
+      width: 25%;
+   }
+
+   /*  Signup */
+
+   .signup {
+    width: 50%;
+          
+   }
+   .sign{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+   input[type="email"],
+input[type="submit"] {
+   border: 0;
+   border-radius: 25px;
+}
+
+input[type="email"] {
+   padding: .5rem 1.75rem;
+   padding-right: 150px;
+   width: 100%;
+}
+
+input[type="submit"] {
+   background-color: #e2574c;
+   font-size: 1rem;
+
+   color: white;
+   cursor: pointer;
+   padding: .25rem 1rem;
+   position: absolute;
+   right: .3rem;
+   top: .25rem;
+}
+
+/*Footer */
+
+.footer{
+  height: 350px;
+}
+   .social {
+      padding-right: 4rem;
+   }
+   .site-main{
+    height: 600px;
+    margin-top: 30px;
+   }
+   .social-media{
+
+  padding-top: 25px;
+   width: 200px;
+  height: 200px;
+}
+.contain1{
+  height: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+
+}
+      /* Header */
+
+   .contain1head {
+      flex-wrap: nowrap;
+   }
+
+   .m-nav ul {
+      border-top: 0;
+      padding-top: 0;
+   }
+
+   .logo {
+      order: 1;
+      flex-basis: 20%;
+   }
+
+   .logo img {
+      max-width: 120px;
+   }
+
+   .cart {
+      flex-basis: 20%;
+      order: 3;
+      width: 48px;
+   }
+
+   .m-nav {
+      flex-basis: 60%;
+      order: 2;
+   }
+
+   .m-nav li {
+      font-size: .9rem;
+      margin: 0 .5rem;
+   }
+
+   /* Banner */
+
+   .season {
+      font-size: 3rem;
+   }
+
+   /* web details */
+
+   .detail-text {
+      max-width:100%
+   }
+
+   /* Product Categories */
+
+   .c-large {
+      flex-basis: 50%;
+   }
+
+   .c-small {
+      flex-basis: 25%;
+   }
+
+   .c-name {
+      font-size: 1.7rem;
+   }
+
+   /* Most-Loved Products */
+
+   .p-wrapper {
+      width: 50%;
+   }
+
+   /*  Signup */
+
+   .signup{
+      max-width: 500px;
+   }
+
+   .signup {
+      width: 50%;
+   }
+
+    /*Footer */
+
+   .footer {
+      text-align: left;
+   }
+
+   .footer  {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   .social {
+      margin-top: 0;
+      padding-right: 2rem;
+   }
+
+   .social li {
+      display: block;
+   }
+
+   .-name {
+      display: inline;
+   }
+
+}
+
+/* Desktop */
+@media only screen and (min-width: 1240px){
+
+
+ /* Sections */
+   
+.c-large-mens {
+    background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ), url('../images/mens-category.jpg') no-repeat center center;
+    background-size: cover, cover;width: 620px;flex-basis: 50%;border: 4px solid #fff;
+}
+.c-small-trends {
+    background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ), url('../images/trends-category.jpg') no-repeat center center;
+    background-size: cover, cover;width: 310px;flex-basis: 25%;border: 4px solid #fff;
+}
+.c-small-glasses {
+    background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ), url('../images/glasses-category.jpg') no-repeat center center;
+    background-size: cover, cover;width: 310px;flex-basis: 25%;border: 4px solid #fff;
+}
+.c-small-sale {
+    background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ), url('../images/sale-category.jpg') no-repeat center center;
+    background-size: cover, cover;width: 310px;flex-basis: 25%;border: 4px solid #fff;
+}
+
+.c-small-bags{
+    background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ), url('../images/bags-category.jpg') no-repeat center center;
+    background-size: cover, cover;width: 310px;flex-basis: 25%;border: 4px solid #fff;
+}
+.c-large-womens {
+    background: linear-gradient( to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100% ), url('../images/womens-category.jpg') no-repeat center center;
+    background-size: cover, cover;width: 620px;flex-basis: 50%;border: 4px solid #fff;
+}
+.prod1{height: 550px;}
+   .contain1 {
+      max-width: 1240px;
+   }
+
+
+   /* Header */
+
+   .logo img {
+      max-width: 160px;
+   }
+
+   .cart {
+      width: 62px;
+   }
+
+
+   .main-nav li {
+      font-size: 1rem;
+      margin: 1rem;
+   }
+
+   /* Banner */
+
+.sect-banner{
+  height: 550px;
+}
+   .banner {
+      background-size: cover, 400px 615px, contain;
+      position: relative;
+   }
+
+   .sprin {
+      font-size: 4rem;
+   }
+
+   /* detail */
+
+   .detail-text {
+    height: 250px;
+    text-align: center;
+    width: 700px;
+   }
+   .detail-text p{
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+ .detail-text h2{
+  text-align: center;
+  font-style: italic;
+  margin-top: 20px;
+
+ }
+   /* Categories */
+
+   .c-name {
+    font-size: 2.4rem;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items:center;
+   }
+
+   /* Most Loved  */
+
+   .p-wrapper {
+      margin-bottom: 0;
+      width: 25%;
+   }
+
+   /*  Signup */
+
+   .signup {
+   max-width: 500px;
+          
+   }
+   .sign{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+}
+/*Footer */
+.
+.footer{
+  height: 350px;
+}
+   .social {
+      padding-right: 4rem;
+   }
+   .site-main{
+    height: 600px;
+    margin-top: 30px;
+   }
+   .social-media{
+
+  padding-top: 25px;
+   width: 200px;
+  height: 200px;
+}
+.contain1{
+  height: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+
+}
+
