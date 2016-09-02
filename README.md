@@ -11,3 +11,4 @@ CSS (with a CSS reset styles, flexbox, and media queries)
 JavaScript
 jQuery (bxSlider, smooth scrolling, fixed header, DOM navigation)
 Mobile first approach to design & coding (Responsive Web Design).
+
