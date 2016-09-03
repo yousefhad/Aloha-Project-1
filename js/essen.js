@@ -18,8 +18,21 @@
 		});
 	});
 
+/********  add cart  */
+
+$(function(){
 
 
+var numItems = 0;
+$('.carousel button').on('click' , function(event){
+
+event.preventDefault();
+numItems++;
+$('.cart-count').text(numItems).fadeIn(1000)
+});
+
+
+});
 
 	$(document).ready(function(){
 		$('a[href^="#"]').on('click',function (e) {
