@@ -17,3 +17,45 @@
 			}
 		});
 	});
+
+
+
+
+	$(document).ready(function(){
+		$('a[href^="#"]').on('click',function (e) {
+		    e.preventDefault();
+
+		    var target = this.hash,
+		    $target = $(target);
+
+		    $('html, body').stop().animate({
+		        'scrollTop': $target.offset().top
+		    }, 900, 'swing', function () {
+		        window.location.hash = target;
+		    });
+		});
+	});
+
+	// lazyloads backgroung image of selected cell
+// jQuery
+var $carousel = $('.carousel').flickity({
+  bgLazyLoad: true
+});
+
+// vanilla JS
+var flkty = new Flickity( '.carousel', {
+  bgLazyLoad: true
+});
+
+
+
+	$(function() {
+		$('.carousel').flickity({
+			cellAlign: 'left',
+			contain: true,
+			percentPosition: false,
+			imagesLoaded: true,
+			autoPlay: true,
+			prevNextButtons: false
+		});
+	});
