@@ -208,11 +208,12 @@ p {
     border-top: 1.5px solid #d7d7d7;
     align-self: center;
     order: 3;
-    width: 100%;
+    width:100%;
     padding-top: 0.2rem;
 }
 
 .m-nav li a {
+  
     font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
@@ -265,7 +266,7 @@ p {
 }
 
 .contain1head {
-    height: 100px;
+    height:100px;
     background-color: rgba(255, 255, 255, 0.7);
     position: fixed;
     z-index: 100;
@@ -301,6 +302,7 @@ p {
 }
 
 .sect-banner {
+   
     background: linear-gradient( to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url('../images/banner-girl.png') no-repeat center 50px, url('../images/flower-bkgd.jpg') repeat-x center top;
     background-size: cover, 200px 500px, cover;
     height: 70vw;
@@ -612,11 +614,15 @@ input[type="submit"]:hover, input[type="submit"]:focus {
     font-size: 16px;
   
     /*************------------ Header --------------*********/
-    .contain1head {
-        height: 100px;
+ .contain1head{
+      
         flex-wrap: nowrap;
         border-bottom: 1px solid #d7d7d7;
     }
+     .contain1head{
+         height: 80px;
+     }
+    
     .logo {
         order: 1;
         flex-basis: 20%;
@@ -634,6 +640,8 @@ input[type="submit"]:hover, input[type="submit"]:focus {
       padding-top: 35px;
         border: none;
         flex-basis: 60%;
+        max-width:500px;
+        min-width: 400px;
         order: 2;
     }
     .m-nav ul li a {
@@ -643,6 +651,7 @@ input[type="submit"]:hover, input[type="submit"]:focus {
     /* *************--------------Banner--------------**************** */
     .sect-banner {
         height: 550px;
+        margin-top: 80px;
     }
     .banner {
         background-size: cover, 400px 615px, contain;
@@ -799,6 +808,12 @@ input[type="submit"]:hover, input[type="submit"]:focus {
     /* ---------------- Desktop ---------------*/
     @media only screen and (min-width: 1240px) {
         /*************------------ Header --------------*********/
+       
+
+ .contain1head {
+     height: 100px;
+ }
+
         .logo img {
             max-width: 160px;
         }
@@ -812,13 +827,20 @@ input[type="submit"]:hover, input[type="submit"]:focus {
         .cart {
             width: 62px;
         }
+        
+        .m-nav{
+            max-width: 500px
+        }
+
+
+
         .m-nav ul li a {
-            font-size: 1.5rem;
-            margin: 3rem;
+            font-size: 1.2rem;
         }
         /*************------------Banner --------------*********/
         .sect-banner {
             height: 550px;
+            margin-top: 100px;
         }
         .banner {
             background-size: cover, 400px 615px, contain;
