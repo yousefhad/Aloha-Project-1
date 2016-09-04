@@ -1,7 +1,9 @@
 
+(function ($) {
+	'use strict';
 
 	/**
-    * the Message
+    * subscribing ask or thank message
     */
 
 	$(function() {
@@ -18,7 +20,7 @@
 		});
 	});
 
-/********  add cart  */
+/******** cart  counter */
 
 $(function(){
 
@@ -31,10 +33,12 @@ numItems++;
 $('.cart-count').text(numItems).fadeIn(1000)
 });
 
-
 });
 
-	$(document).ready(function(){
+
+
+/******** smooth scrolling ****** */
+	$(function(){
 		$('a[href^="#"]').on('click',function (e) {
 		    e.preventDefault();
 
@@ -49,18 +53,10 @@ $('.cart-count').text(numItems).fadeIn(1000)
 		});
 	});
 
-	// lazyloads backgroung image of selected cell
-// jQuery
-var $carousel = $('.carousel').flickity({
-  bgLazyLoad: true
-});
-
-// vanilla JS
-var flkty = new Flickity( '.carousel', {
-  bgLazyLoad: true
-});
 
 
+
+/******* flickity ****** */
 
 	$(function() {
 		$('.carousel').flickity({
@@ -72,3 +68,15 @@ var flkty = new Flickity( '.carousel', {
 			prevNextButtons: false
 		});
 	});
+
+
+
+/*********go toThe  main bar */
+
+	$(function() {
+		$("a[href='#']").click(function() {
+		   $("#"+$(this).attr("href").slice(1)+"").focus();
+		});
+	});
+
+}(jQuery));

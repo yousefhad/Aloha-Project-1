@@ -22,5 +22,5 @@ thi is my first project in RED Academy we created this website using HTML, CSS, 
 <h1>Aloha design
 </h1>
 <hr>
-<img height="auto" src="https://github.com/yousefhad/Project1b-Aloha/tree/master/images/aloha-desktop-1240px.png"/>
+![Alt text](./images/aloha-desktop-stretch.png "Aloha")
 <br>
