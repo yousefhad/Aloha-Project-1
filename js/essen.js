@@ -57,17 +57,14 @@ $('.cart-count').text(numItems).fadeIn(1000)
 
 
 /******* flickity ****** */
-
-	$(function() {
-		$('.carousel').flickity({
-			cellAlign: 'left',
-			contain: true,
-			percentPosition: false,
-			imagesLoaded: true,
-			autoPlay: true,
-			prevNextButtons: false
-		});
-	});
+$('.carousel').flickity({
+	cellAlign:'right',
+	cotanin: true,
+	wrapAround:true,
+	prevNextButtons:false,
+	autoPlay:true,
+	imageLoaded:true
+});
 
 
 
