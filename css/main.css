@@ -1,3 +1,5 @@
+     
+     
         /*---------------------------*/
 
 .screen-reader-text {
@@ -171,9 +173,7 @@ a:hover {
     color: #b64036;
 }
 
-p {
-    text-align: center;
-}
+
 
 
 /* --------- */
@@ -230,14 +230,14 @@ p {
     align-self: flex-start;
     order: 1;
     height: 4rem;
-    width: 5rem;
+    width: 6rem;
 }
 
 .cart {
     align-self: flex-end;
     order: 2;
-    width: 3rem;
-    height: 3rem;
+    width: 55px;
+    height: 55px;
     display: flex;
     flex-flow: row;
     max-width: 10%;
@@ -251,12 +251,17 @@ p {
     display: none;
     font-size: 0.9rem;
     font-weight: bold;
-    height: 20px;
-    width: 20px;
+    height: 22px;
+    width: 22px;
+    line-height: 22px;
+    text-align: center;
     padding-left: 0.3rem;
     padding-bottom: 0.8rem;
-    position: absolute;
-    bottom: 35px;
+   position: absolute;
+    bottom: 25px;
+    left: 40px;
+    
+
 }
 
 .logo img {
@@ -267,7 +272,7 @@ p {
 
 .contain1head {
     height:100px;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgb(255, 255, 255);
     position: fixed;
     z-index: 100;
     width: 100%;
@@ -294,11 +299,15 @@ p {
 /*---------banner---------*/
 
 .collection {
-    font-size: 2rem;
+    font-size: 1.3rem;
+    padding-top: 40px;
+    font-weight: 700;
 }
 
 .sprin {
-    font-size: 3rem;
+    font-size: 2.6rem;
+    font-weight: 500;
+    font-family: 'Playfair Display Web', serif;
 }
 
 .sect-banner {
@@ -321,7 +330,7 @@ p {
     text-align: center;
     width: 100%;
     position: absolute;
-    font-weight: 500;
+      text-shadow: 4px 4px 5px rgba(100, 100, 100, 0.9);
 }
 
 .collection {
@@ -337,8 +346,8 @@ p {
 /*---------------about---------------*/
 
 .detail-text {
-    padding-top: 10px;
-    height: 150px;
+    padding-top: 50px;
+    height: 200px;
     text-align: center;
     margin: auto;
 }
@@ -533,13 +542,16 @@ input[type="submit"]:hover, input[type="submit"]:focus {
     width: 100%;
 }
 
-.copyright {
+
+.copyright p {
+    font-size: 1.2rem;
     padding-top: 30px;
+   
 }
 
 .footer {
     background-color: #242424;
-    height: 250px;
+    height: 300px;
     padding: 0 50px;
     font-family: 'Playfair Display Web';
 }
@@ -548,8 +560,9 @@ input[type="submit"]:hover, input[type="submit"]:focus {
     color: white;
 }
 
-.contact {
-    line-height: 2;
+.the-address{
+margin-top:15px;
+margin-bottom: 15px;
 }
 
 .the-address p {
@@ -557,13 +570,26 @@ input[type="submit"]:hover, input[type="submit"]:focus {
 }
 
 .info {
-    padding-bottom: 40px;
-    width: 200px;
+  
+    width: 300px;
+    text-align: center;
 }
+.fa
+{
 
+    margin-left:8px;
+}
+#mid-line{
+    margin-top: -45px;
+    margin-bottom: 10px;
+}
 .social-links li {
     padding-bottom: 10px;
     padding-right: 35px;
+}
+
+.social{
+    bottom:30px;
 }
 
 .social li a {
@@ -577,6 +603,7 @@ input[type="submit"]:hover, input[type="submit"]:focus {
     list-style: none;
 }
 
+
 .footer a {
     color: white;
     line-height: 1.7;
@@ -586,21 +613,16 @@ input[type="submit"]:hover, input[type="submit"]:focus {
     color: #b64036;
 }
 
-.social-media {
-    padding-top: 30px;
-    width: 200px;
-    height: 230px;
-}
 
 .social-media ul li {
     display: inline-block;
 }
 
 .social-media {
-    height: 5px;
-    padding-top: 0;
-    margin-top: -40px;
-    padding-left: 60px;
+   
+   width: 200px;
+    margin-top: -20px;
+    padding-left: 45px;
 }
 
 .n-name {
@@ -614,6 +636,8 @@ input[type="submit"]:hover, input[type="submit"]:focus {
     font-size: 16px;
   
     /*************------------ Header --------------*********/
+
+
  .contain1head{
       
         flex-wrap: nowrap;
@@ -775,15 +799,19 @@ input[type="submit"]:hover, input[type="submit"]:focus {
         height: 600px;
         margin-top: 30px;
     }
-    /*Footer */
+    /*------------Footer--------- */
+   .info{
+       text-align: left;
+       
+   }
     .footer {
         height: 350px;
         text-align: left;
         display: flex;
         justify-content: space-between;
     }
-    .social {
-        margin-top: -8px;
+    ul.social {
+    
         padding-right: 2rem;
     }
     .n-name {
@@ -805,6 +833,11 @@ input[type="submit"]:hover, input[type="submit"]:focus {
         flex-flow: row;
         justify-content: space-between;
     }
+    
+    .contact{
+        font-size: 1.1rem;
+    }
+
     /* ---------------- Desktop ---------------*/
     @media only screen and (min-width: 1240px) {
         /*************------------ Header --------------*********/
@@ -821,8 +854,8 @@ input[type="submit"]:hover, input[type="submit"]:focus {
             font-size: 1rem;
             height: 25px;
             width: 25px;
-            padding-left: 0.5rem;
-            position: absolute;
+           left: 70px;
+          
         }
         .cart {
             width: 62px;
