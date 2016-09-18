@@ -18,4 +18,4 @@ We created this website using HTML, CSS, and JQuery scripts. This is a static we
 </h1>
 <hr>
 ![Alt text](./images/aloha-desktop-stretch.png "Aloha")
-<br>
+
