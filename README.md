@@ -6,11 +6,11 @@ thi is my first project in RED Academy we created this website using HTML, CSS, 
 
 ##Languages and tools used:
 ###
--HTML
--CSS (with a CSS reset styles, flexbox, and media queries)
--JavaScript
--jQuery (bxSlider, smooth scrolling, fixed header, DOM navigation)
--Mobile first approach to design & coding (Responsive Web Design).
+- HTML
+- CSS (with a CSS reset styles, flexbox, and media queries)
+- JavaScript
+- jQuery (bxSlider, smooth scrolling, fixed header, DOM navigation)
+- Mobile first approach to design & coding (Responsive Web Design).
 
 <br>
 <h1>Aloha design
