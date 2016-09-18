@@ -544,7 +544,7 @@ input[type="submit"]:hover, input[type="submit"]:focus {
 
 
 .copyright p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding-top: 30px;
    
 }
@@ -558,17 +558,19 @@ input[type="submit"]:hover, input[type="submit"]:focus {
 
 .footer p {
     color: white;
+    margin-bottom: 8px;
 }
 
 .the-address{
 margin-top:15px;
-margin-bottom: 15px;
+margin-bottom: 37px;
 }
 
 .the-address p {
     color: #999999;
+    padding: 0px;
+    margin: 0px;
 }
-
 .info {
   
     width: 300px;
@@ -799,7 +801,12 @@ margin-bottom: 15px;
         height: 600px;
         margin-top: 30px;
     }
-    /*------------Footer--------- */
+   
+   .copyright p {
+    font-size: 1.2rem;
+    padding-top: 30px;
+}
+
    .info{
        text-align: left;
        
